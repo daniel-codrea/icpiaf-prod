@@ -1,0 +1,9 @@
+<h3>Sidebar</h3>
+<ul class="list-unstyled">
+{{#withSort pages "data.title"}}
+    <li>
+        <h4><a href="{{relative dest this.dest}}">{{ data.title }}</a></h4>
+        <small>Posted on: {{moment data.date format ="MMMM DD,YYYY"}}</small>
+    </li>
+{{/withSort}}
+</ul>
