@@ -33,7 +33,7 @@
   animation-name: fadeInDown;
 }
 .navbar-top.affix .logo-wrapper {
-  margin-top: 15px;
+  margin-top: 24px;
   margin-bottom: 18px;
 }
 .navbar-top.affix .logo-wrapper .navbar-brand img {
@@ -59,7 +59,7 @@
   -o-border-radius: 0;
 }
 .logo-wrapper {
-  margin-top: 19px;
+  margin-top: 31px;
   margin-bottom: 17px;
   float: left;
 }

@@ -526,6 +526,12 @@ input[type="submit"] {
   padding-right: 5px;
   vertical-align: middle;
 }
+.top-bar .contact-details li.language-inactive img {
+  opacity: 0.5;
+}
+.top-bar .contact-details li.language-inactive:hover img {
+  opacity: 1;
+}
 .top-bar ul.social-list {
   float: right;
   padding: 8px 0;
@@ -542,7 +548,7 @@ input[type="submit"] {
   animation-name: fadeInDown;
 }
 .navbar-top.affix .logo-wrapper {
-  margin-top: 15px;
+  margin-top: 24px;
   margin-bottom: 18px;
 }
 .navbar-top.affix .logo-wrapper .navbar-brand img {
@@ -568,7 +574,7 @@ input[type="submit"] {
   -o-border-radius: 0;
 }
 .logo-wrapper {
-  margin-top: 19px;
+  margin-top: 31px;
   margin-bottom: 17px;
   float: left;
 }
@@ -1450,7 +1456,7 @@ input[type="submit"] {
 .project .projects-box .projects-thumb {
   margin-bottom: 20px;
   position: relative;
-  /*  
+  /*
 			&:before{
 				content: '';
 				position: absolute;
@@ -1463,7 +1469,7 @@ input[type="submit"] {
 				-webkit-transition: all 0.4s ease;
 				-moz-transition: all 0.4s ease;
 				transition: all 0.4s ease;
-			}		
+			}
 			*/
 }
 .project .projects-box .projects-thumb:hover:before {
