@@ -2633,17 +2633,17 @@ blockquote .quote-text {
   border: 1px solid #E5E5E5;
   padding: 30px;
 }
-.services-2 .tabs-content .services-list {
+.services-list {
   padding: 0 30px;
 }
-.services-2 .tabs-content .services-list .list {
+.services-list .list {
   margin-bottom: 30px;
 }
-.services-2 .tabs-content .services-list .list li {
+.services-list .list li {
   line-height: 36px;
   font-size: 15px;
 }
-.services-2 .tabs-content .services-list .list li span {
+.services-list .list li span {
   color: #fff;
   border-radius: 50%;
   width: 20px;
@@ -2653,6 +2653,7 @@ blockquote .quote-text {
   line-height: 20px;
   vertical-align: middle;
   margin-right: 8px;
+  font-size: 85%;
 }
 .service-3 .service-item {
   padding: 30px;
@@ -2747,6 +2748,11 @@ blockquote .quote-text {
 }
 .single-img {
   margin-bottom: 50px;
+  height: 120px;
+  overflow: hidden;
+}
+.single-img img {
+  object-fit: cover;
 }
 .content-company {
   padding: 21px;

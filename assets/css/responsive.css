@@ -120,7 +120,7 @@
   .services-2 .tab-menu .list-group li a {
     padding: 13px;
   }
-  .services-2 .tabs-content .services-list {
+.services-list {
     padding: 15px 0;
   }
   #pagination {
@@ -265,7 +265,7 @@
   .services-2 .tabs-content {
     padding: 15px 0;
   }
-  .services-2 .tabs-content .services-list {
+ .services-list {
     padding: 15px 0;
   }
   .error-page h1 {
@@ -424,7 +424,7 @@
   .services-2 .tabs-content {
     padding: 15px 0;
   }
-  .services-2 .tabs-content .services-list {
+ .services-list {
     padding: 15px 0;
   }
   .error-page h1 {
@@ -595,7 +595,7 @@
   .services-2 .tabs-content {
     padding: 15px 0;
   }
-  .services-2 .tabs-content .services-list {
+ .services-list {
     padding: 15px 0;
   }
   .error-page h1 {
