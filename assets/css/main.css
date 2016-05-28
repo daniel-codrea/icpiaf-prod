@@ -2226,13 +2226,13 @@ footer a {
 .post-title a {
   color: #444;
 }
-.blog-post {
-  margin-bottom: 40px;
-  padding-bottom: 40px;
-  border-bottom: 1px solid #eee;
-}
 .blog-post .post-thumb {
   position: relative;
+}
+.certificates-thumb {
+  max-height: 250px;
+  overflow: hidden;
+  margin: 15px 0;
 }
 .blog-post .post-thumb .hover-wrap {
   position: absolute;
@@ -2276,7 +2276,7 @@ footer a {
   opacity: 1;
 }
 .blog-post .post-thumb:hover .link {
-  margin-top: 0px;
+  margin-top: -20px;
 }
 .blog-post .date {
   border: 1px solid #e3e3e3;
@@ -2312,6 +2312,16 @@ footer a {
 }
 .blog-post .post-content p {
   margin-bottom: 30px;
+}
+.conditii-vanzare .indent {
+  padding-left: 40px;
+}
+.conditii-vanzare .double-indent {
+  display: block;
+  padding-left: 80px;
+}
+.conditii-vanzare h4 {
+  padding: 15px 0 10px;
 }
 #pagination span,
 #pagination a {
