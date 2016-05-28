@@ -29,6 +29,9 @@ $(document).ready(function($) {
     accY: -100
   });
 
+  var currentDate = new Date();
+$('#currentYear').html((currentDate).getFullYear());
+
   // Nav Menu & Search
   $(".nav > li:has(ul)").addClass("drop");
   $(".nav > li.drop > ul").addClass("dropdown");
@@ -155,7 +158,7 @@ $(document).ready(function($) {
     slideSpeed : 400,
     stopOnHover: true,
     autoPlay: 3000,
-    items : 5,
+    items : 3,
     itemsDesktopSmall : [900,3],
     itemsTablet: [640,2],
     itemsMobile : [480, 1]
