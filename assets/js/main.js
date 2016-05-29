@@ -1,6 +1,9 @@
-
 // Social Icons Tooltip
 $('.social-link').tooltip();
+socialMediaShareURLs("#facebookSL");
+socialMediaShareURLs("#twitterSL");
+socialMediaShareURLs("#linkedinSL");
+socialMediaShareURLs("#googlePlusSL");
 
 // Page Loader
 $(window).load(function() {
@@ -29,8 +32,139 @@ $(document).ready(function($) {
     accY: -100
   });
 
+  $("#contact-form").unbind().submit(function() {
+    return false;
+  });
+  hideError('#contact_name', '#contact_name_msg');
+  hideError('#contact_email', '#contact_email_msg');
+  hideError('#contact_subject', '#contact_subject_msg');
+  hideError('#contact_message', '#contact_message_msg');
+  $('#contact_submit').off().on("click", function(e) {
+    e.preventDefault();
+    if($("#contact_name").val() == "") {
+      $('#contact_name_msg').html("Numele este obligatoriu.");
+      return false;
+    }
+    if($("#contact_email").val() == "") {
+      $('#contact_email_msg').html("Adresa de email este obligatorie.");
+      return false;
+    }
+    var emailRegex = new RegExp(/^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$/i);
+    var valid = emailRegex.test($("#contact_email").val());
+    if(!valid) {
+      $('#contact_email_msg').html("Adresa de email nu este valida.");
+      return false;
+    }
+
+    if($("#contact_subject").val() == "") {
+      $('#contact_subject_msg').html("Subiectul este obligatoriu.");
+      return false;
+    }
+
+    if($("#contact_message").val() == "") {
+      $('#contact_message_msg').html("Mesajul este obligatoriu.");
+      return false;
+    }
+
+    var successCallback = function(data, status, jqXHR) {
+      if(jqXHR.status == 200) {
+        $("#contact_name").val("");
+        $("#contact_email").val("");
+        $("#contact_phone").val("");
+        $("#contact_subject").val("");
+        $("#contact_message").val("");
+        $('#contact_form_message').html("Va multumim! Mesajul dumneavoastra a fost trimis cu succes! Vom reveni cu un raspuns in cel mai scurt timp posibil.");
+      } else if(jqXHR.status == 206){
+        $('#contact_form_error').html("Ne pare rau. A intervenit o eroare si nu am putut sa trimitem mesajul dumneavoastra. Va rugam sa incercati mai tarziu.");
+      }
+    };
+    var errorCallback = function(error, status, jqXHR) {
+      if(jqXHR.status == 404) {
+        console.log(error);
+      }
+    };
+
+    $.ajax({
+      type: "POST",
+      data: $('#contact-form').serialize(),
+      url: "assets/php/contact.php",
+      success: successCallback,
+      error: errorCallback
+    });
+  });
+
+  $("#oferta-form").unbind().submit(function() {
+    return false;
+  });
+  hideError('#oferta_comp', '#oferta_comp_msg');
+  hideError('#oferta_address', '#oferta_address_msg');
+  hideError('#oferta_email', '#oferta_email_msg');
+  hideError('#oferta_cp', '#oferta_cp_msg');
+  hideError('#oferta_message', '#oferta_message_msg');
+  $('#oferta_submit').off().on("click", function(e) {
+    e.preventDefault();
+
+    if($("#oferta_comp").val() == "") {
+      $('#oferta_comp_msg').html("Numele companiei este obligatoriu.");
+      return false;
+    }
+
+    if($("#oferta_address").val() == "") {
+      $('#oferta_address_msg').html("Adresa companiei este obligatorie.");
+      return false;
+    }
+
+    if($("#oferta_email").val() == "") {
+      $('#oferta_email_msg').html("Adresa de email este obligatorie.");
+      return false;
+    }
+    var emailRegex = new RegExp(/^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$/i);
+    var valid = emailRegex.test($("#oferta_email").val());
+    if(!valid) {
+      $('#oferta_email_msg').html("Adresa de email nu este valida.");
+      return false;
+    }
+
+    if($("#oferta_cp").val() == "") {
+      $('#oferta_cp_msg').html("Persoana de contact este obligatorie.");
+      return false;
+    }
+
+    if($("#oferta_message").val() == "") {
+      $('#oferta_message_msg').html("Mesajul este obligatoriu.");
+      return false;
+    }
+
+    var successCallback = function(data, status, jqXHR) {
+      if(jqXHR.status == 200) {
+        $("#oferta_comp").val("");
+        $("#oferta_address").val("");
+        $("#oferta_email").val("");
+        $("#oferta_phone").val("");
+        $("#oferta_cp").val("");
+        $("#oferta_message").val("");
+        $('#oferta_form_success').html("Va multumim! Cererea dumneavoastra a fost trimisa cu succes! Vom reveni cu un raspuns in cel mai scurt timp posibil.");
+      } else if(jqXHR.status == 206){
+        $('#oferta_form_error').html("Ne pare rau. A intervenit o eroare si nu am putut sa trimitem cererea dumneavoastra. Va rugam sa incercati mai tarziu.");
+      }
+    };
+    var errorCallback = function(error, status, jqXHR) {
+      if(jqXHR.status == 404) {
+        console.log(error);
+      }
+    };
+
+    $.ajax({
+      type: "POST",
+      data: $('#oferta-form').serialize(),
+      url: "assets/php/oferta.php",
+      success: successCallback,
+      error: errorCallback
+    });
+  });
+
   var currentDate = new Date();
-$('#currentYear').html((currentDate).getFullYear());
+  $('#currentYear').html((currentDate).getFullYear());
 
   // Nav Menu & Search
   $(".nav > li:has(ul)").addClass("drop");
@@ -400,3 +534,39 @@ $('.wpb-mobile-menu').slicknav({
   closedSymbol: '<i class="fa fa-angle-right"></i>',
   openedSymbol: '<i class="fa fa-angle-down"></i>',
 });
+
+function socialMediaShareURLs(id) {
+    var url = window.location.href;
+    var facebookShareUrl = "",
+        twitterShareUrl = "",
+        linkedinShareUrl = "",
+        googlePlusShareUrl = "",
+        socialMedia = $(id).data("social-media"),
+        title = $("#productTitle").html(),
+        description = $("#productDescription").html();
+    ;
+    facebookShareUrl = "https://www.facebook.com/sharer.php?u=" + url;
+    twitterShareUrl = "http://twitter.com/share?text=Check%20out&url=" + url;
+    linkedinShareUrl = "http://www.linkedin.com/shareArticle?mini=true&url=" + url + "&title=" + title + "&summary=" + description;
+    googlePlusShareUrl = "https://plus.google.com/share?url=" + url;
+
+    if (socialMedia == "facebook") {
+        $(id).attr("href", facebookShareUrl);
+    } else if (socialMedia == "twitter") {
+        $(id).attr("href", twitterShareUrl);
+    } else if (socialMedia == "linkedin") {
+        $(id).attr("href", linkedinShareUrl);
+    } else if (socialMedia == "googlePlus") {
+        $(id).attr("href", googlePlusShareUrl);
+    }
+}
+
+function hideError(element, errorField) {
+  var previousValue = $(element).val();
+  $(element).keyup(function(e) {
+      var currentValue = $(this).val();
+      if(currentValue != previousValue) {
+           $(errorField).html("");
+      }
+  });
+}

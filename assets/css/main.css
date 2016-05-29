@@ -2316,7 +2316,7 @@ footer a {
 .conditii-vanzare .indent {
   padding-left: 40px;
 }
-.conditii-vanzare .double-indent {
+.conditii-vanzare .double-indent, .double-indent {
   display: block;
   padding-left: 80px;
 }
@@ -2647,7 +2647,7 @@ blockquote .quote-text {
   padding: 0 30px;
 }
 .services-list .list {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .services-list .list li {
   line-height: 36px;
@@ -2964,10 +2964,18 @@ textarea {
   border-bottom: 2px solid transparent;
   box-shadow: none;
 }
+.small-form .form-control,
+.small-form textarea {
+  background: #fff;
+}
 .form-control:focus,
 textarea:focus {
   box-shadow: none;
   border-bottom: 2px solid #ffbb02;
+}
+hr.border {
+  margin: 30px 10px;
+  border-top: 1px solid #eee;
 }
 .information {
   margin-top: 15px;
@@ -3605,4 +3613,33 @@ html {
   color: #fff;
   font-size: 18px;
   line-height: 30px;
+}
+
+.p-b-10 {
+  padding-bottom: 10px;
+}
+.p-t-10 {
+  padding-top: 10px;
+}
+.table tbody>tr>th.vertical-align{
+    vertical-align: middle;
+}
+.display-inline {
+  display: inline !important;
+}
+.m-x-10 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+h3, h4 {
+  margin-bottom: 10px;
+}
+
+.error-field {
+  position: absolute;
+  top: 50px;
+  left: 17px;
+}
+.error-field-large {
+  top: 213px;
 }
