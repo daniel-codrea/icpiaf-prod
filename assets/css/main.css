@@ -333,6 +333,18 @@ input[type="submit"] {
 #content.full-sections {
   padding: 0;
 }
+#content.pattern-1 {
+  background: url(../img/crossword.png) repeat;
+}
+#content.pattern-2 {
+  background: url(../img/agsquare.png) repeat;
+}
+#content.pattern-3 {
+  background: url(../img/grey.png) repeat;
+}
+#content.pattern-4 {
+  background: url(../img/fabric_of_squares_gray.png) repeat;
+}
 .section {
   position: relative;
   overflow: hidden;
@@ -2625,6 +2637,7 @@ blockquote .quote-text {
   border: 1px solid #E5E5E5;
   padding: 15px;
   display: block;
+  background: #fff;
   text-transform: uppercase;
   -webkit-transition: all linear 0.3s;
   -moz-transition: all linear 0.3s;
@@ -2642,6 +2655,7 @@ blockquote .quote-text {
 .services-2 .tabs-content {
   border: 1px solid #E5E5E5;
   padding: 30px;
+  background: #fff;
 }
 .services-list {
   padding: 0 30px;
@@ -2713,6 +2727,7 @@ blockquote .quote-text {
   background: #F6F6F6;
   padding: 30px;
   margin-bottom: 30px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
 }
 .project-details h4,
 .share h4 {
