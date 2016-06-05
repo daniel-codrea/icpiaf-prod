@@ -1,0 +1,51 @@
+---
+title: Cerere oferta
+slug: cerere
+id: cerere
+lang: ro
+---
+
+<!-- Start Content Section -->
+<section id="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h2 class="big-title">Formular de cerere de oferta</h2>
+        <!-- Form -->
+        <form action="" id="oferta-form" class="contact-form" role="form" method="post">
+          <div class="row">
+            <div class="col-md-6">
+              <input type="text" id="oferta_comp" class="form-control" name="oferta_name" placeholder="Nume companie *">
+              <div id="oferta_comp_msg" class="text-danger error-field"></div>
+            </div>
+            <div class="col-md-6">
+              <input type="text" id="oferta_address" class="form-control" name="oferta_address" placeholder="Adresa companie *">
+              <div id="oferta_address_msg" class="text-danger error-field"></div>
+            </div>
+            <div class="col-md-6">
+              <input type="email" id="oferta_email" class="form-control" name="oferta_email" placeholder="Email *">
+              <div id="oferta_email_msg" class="text-danger error-field"></div>
+            </div>
+            <div class="col-md-6">
+              <input type="text" id="oferta_phone" class="form-control" name="oferta_phone" placeholder="Telefon">
+            </div>
+            <div class="col-md-12">
+              <input type="text" id="oferta_cp" class="form-control" name="oferta_contact-person" placeholder="Persoana de cotact *">
+              <div id="oferta_cp_msg" class="text-danger error-field"></div>
+            </div>
+            <div class="col-md-12">
+              <textarea class="form-control" id="oferta_message" name="oferta_message" placeholder="Alte detalii *" rows="9"></textarea>
+              <div id="oferta_message_msg" class="text-danger error-field error-field-large"></div>
+            </div>
+            <div class="col-md-9">
+              <button type="submit" id="oferta_submit" class="btn btn-effect"><i class="fa fa-check"></i> Cere oferta</button>
+            </div>
+          </div>
+        </form>
+        <div id="oferta_form_success" class="p-t-10"></div>
+        <div id="oferta_form_error" class="text-danger p-t-10"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Content Section  -->

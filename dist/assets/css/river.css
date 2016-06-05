@@ -1,0 +1,272 @@
+/*You can add your won color also */
+a:hover {
+  color: #383185;
+}
+.section-title span {
+  color: #383185;
+}
+.section-title:before {
+  background: #383185;
+}
+.btn-effect {
+  background: #383185;
+}
+.btn-effect:hover {
+  background: #383185;
+}
+.btn-effect:after {
+  background: rgba(255, 255, 255, 0.2);
+}
+.btn-border:hover {
+  color: #383185;
+}
+.btn-wite:hover {
+  color: #383185;
+}
+.form-control:focus,
+textarea:focus {
+  box-shadow: none;
+  border-bottom: 2px solid #383185;
+}
+a.main-button,
+input[type="submit"] {
+  background-color: #383185;
+}
+.carousel-control i:hover {
+  color: #383185;
+  border-color: #383185;
+}
+.slicknav_btn {
+  border-color: #383185;
+}
+.slicknav_btn:hover {
+  background: #383185;
+}
+.slicknav_nav a:hover,
+.slicknav_nav .active {
+  color: #383185;
+}
+.slicknav_menu .slicknav_icon-bar {
+  background: #383185;
+}
+.navbar-default .navbar-nav > li:hover > a,
+.navbar-default .navbar-nav > li > a.active {
+  color: #383185;
+}
+.dropdown > li:hover > a,
+.sup-dropdown li:hover > a {
+  color: #fff;
+  background-color: #383185;
+}
+.navbar-default .navbar-nav .dropdown {
+  border-top: 3px solid #383185;
+}
+.full-search {
+  border-top: 3px solid #383185;
+}
+.dropdown li a.active,
+.sup-dropdown li a.active {
+  color: #fff;
+  background-color: #383185;
+}
+.tp-caption .small-title span {
+  color: #383185;
+}
+.tparrows.preview1:hover:after {
+  color: #383185;
+}
+.tp-bullets.preview1 .bullet:hover,
+.tp-bullets.preview1 .bullet.selected {
+  background: #383185 !important;
+}
+.boxed {
+  background: #383185;
+}
+.controls a:hover,
+.controls a.active {
+  color: #fff;
+  background: #383185;
+  border: 1px solid #383185;
+}
+.portfolio-item .icon i {
+  background: #383185;
+}
+.portfolio-item .content {
+  background: #383185;
+}
+.featured-header i {
+  color: #383185;
+  border: 2px solid #383185;
+}
+.featured-header .featured-title p {
+  color: #383185;
+}
+.featured-content:hover i {
+  background: #383185;
+  color: #fff;
+}
+.team-member .info {
+  background: #383185;
+}
+#counter:before {
+  background: rgba(56, 49, 133, 0.7);
+}
+#testimonial .img-member {
+  border: 4px solid #383185;
+}
+#testimonial .client-info {
+  background: #383185;
+}
+#testimonial .owl-theme .owl-controls .owl-buttons div {
+  background: #383185;
+}
+#testimonial::before {
+  background: rgba(56, 49, 133, 0.7);
+}
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+  background: #383185;
+}
+.hours-widget .contact-info ul.hours span {
+  color: #383185;
+}
+.copyright-section p a {
+  color: #383185;
+}
+.back-to-top i {
+  background-color: #383185;
+}
+.switcher-box .open-switcher {
+  background: #383185;
+}
+.cta {
+  background: #383185;
+}
+.item-wrapper .icon i {
+  color: #383185;
+  border: 2px solid #383185;
+}
+.item-wrapper:hover i {
+  background: #383185;
+  color: #fff;
+}
+.company-history .content-history-header .year {
+  color: #383185;
+}
+.partners .logo:hover {
+  border-color: #383185;
+  background: #fff;
+}
+.partners .partners-text h3 a:hover {
+  color: #383185;
+}
+.pricing-tables .pricing-table .plan-name .icon i {
+  color: #383185;
+  border: 2px solid #383185;
+}
+.pricing-tables .pricing-table .plan-price {
+  background: #383185;
+}
+.service-box .service-head .icon i {
+  color: #383185;
+}
+.service-box .service-head:after {
+  background: #383185;
+}
+.service-box:hover .icon i {
+  color: #fff;
+  background: #383185;
+}
+.services-2 .tab-menu .list-group li a:hover,
+.services-2 .tab-menu .list-group li.active a {
+  background: #383185;
+  color: #fff;
+  border-color: #383185;
+}
+.services-list .list li span {
+  background: #383185;
+}
+.service-3 .service-item .icon i {
+  color: #383185;
+  border: 2px solid #383185;
+}
+.service-3 .service-item h3 a {
+  color: #383185;
+}
+.service-3 .service-item:hover {
+  background: #383185;
+  border-color: #383185;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li > a:hover {
+  background-color: #383185 !important;
+  border-color: #383185 !important;
+  color: #fff;
+}
+.panel-heading .panel-title a {
+  background-color: #383185;
+}
+.panel-heading .panel-title a.collapsed:hover {
+  background-color: #383185;
+  color: #ffffff;
+}
+.post-title a:hover {
+  color: #383185;
+}
+.blog-post .post-thumb .hover-wrap .link i {
+  color: #383185;
+  border: 2px solid #383185;
+}
+.blog-post .post-thumb .hover-wrap .link i:hover {
+  background: #383185;
+  color: #fff;
+}
+#pagination span.current,
+#pagination a:hover {
+  color: #383185;
+}
+.widget-title:before {
+  border-bottom: 1px solid #383185;
+}
+#sidebar .cat-list li a:hover {
+  color: #383185;
+}
+#sidebar .posts-list .widget-content a:hover {
+  color: #383185;
+}
+#sidebar .tag a:hover {
+  color: #fff;
+  background: #383185;
+  border-color: #383185;
+}
+blockquote {
+  border-left-color: #383185;
+}
+.reply-link:hover {
+  background: #383185;
+  color: #fff;
+}
+.product .post-featured .esg-overlay .icon i {
+  color: #383185;
+  border: 2px solid #383185;
+}
+.product .post-featured .esg-overlay .icon i:hover {
+  background: #383185;
+  color: #fff;
+}
+.product .post-content .product-price .amount {
+  color: #383185;
+}
+.product .btn-cart {
+  border: 1px solid #383185;
+}
+.product .btn-cart:hover {
+  background: #383185;
+}
+.page-header {
+  background: rgba(56, 49, 133, 0.7);
+}
+.breadcrumb a:hover {
+  color: #383185;
+}
