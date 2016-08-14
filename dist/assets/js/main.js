@@ -167,7 +167,9 @@ $(document).ready(function($) {
   $('#currentYear').html((currentDate).getFullYear());
 
   $('#tipue_search_input').tipuesearch({
-    'mode': 'live'
+    'mode': 'live',
+    'liveDescription': '#content',
+    'liveContent': '#content'
   });
 
   // Nav Menu & Search
